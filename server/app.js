@@ -10,10 +10,6 @@ const MONGODB_URL = "mongodb://127.0.0.1/ecommerce";
 
 app.use(cors());
 
-app.get("/", (req, res) => {
-  res.send("Hello world!");
-});
-
 app.use("/products", productRoutes);
 
 mongoose.connect(MONGODB_URL);
